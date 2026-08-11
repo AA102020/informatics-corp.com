@@ -318,6 +318,26 @@ p {
   content: "+";
   margin-right: 16px;
 }
+.question-groups {
+  border-top: 1px solid rgba(255,255,255,.2);
+}
+.question-groups article {
+  padding: 28px 0 12px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.question-groups h3 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.72);
+}
+.question-groups li {
+  border-bottom: 0;
+  padding: 9px 0;
+  font-size: 20px;
+}
 .publication-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
