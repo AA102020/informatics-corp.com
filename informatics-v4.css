@@ -240,6 +240,110 @@ p {
   color: rgba(7, 26, 43, 0.76);
 }
 
+.service-families,
+.engagement-routes,
+.insight-publications {
+  padding: 120px clamp(24px, 7vw, 112px);
+  border-top: 1px solid var(--line);
+}
+.section-intro.compact {
+  margin-bottom: 55px;
+}
+.three-card-grid,
+.four-card-grid {
+  display: grid;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.three-card-grid { grid-template-columns: repeat(3, 1fr); }
+.four-card-grid { grid-template-columns: repeat(4, 1fr); }
+.three-card-grid article,
+.four-card-grid a,
+.publication-card {
+  padding: 42px 34px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.three-card-grid span,
+.four-card-grid span,
+.publication-card > span {
+  font-size: 11px;
+}
+.three-card-grid h3,
+.four-card-grid h3,
+.publication-card h3 {
+  font-family: var(--font-editorial), Georgia, serif;
+  font-size: 29px;
+  line-height: 1.18;
+  margin: 42px 0 18px;
+}
+.three-card-grid p,
+.four-card-grid p,
+.publication-card p {
+  color: rgba(7, 26, 43, 0.7);
+  font-size: 15px;
+}
+.four-card-grid a:hover,
+.publication-card:hover {
+  background: rgba(7, 26, 43, 0.035);
+}
+.decision-questions {
+  padding: 110px clamp(24px, 7vw, 112px);
+  background: var(--ink);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 90px;
+}
+.decision-questions h2 {
+  font-family: var(--font-editorial), Georgia, serif;
+  font-size: clamp(40px, 4.6vw, 66px);
+  font-weight: 500;
+  line-height: 1.16;
+  margin: 35px 0 0;
+}
+.decision-questions ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.decision-questions li {
+  font-family: var(--font-editorial), Georgia, serif;
+  font-size: 23px;
+  line-height: 1.35;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.decision-questions li::before {
+  content: "+";
+  margin-right: 16px;
+}
+.publication-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.publication-card small {
+  display: block;
+  margin-top: 28px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 10px;
+}
+.legal-page {
+  padding: 100px clamp(24px, 7vw, 112px) 130px;
+  max-width: 1050px;
+}
+.legal-page h1 {
+  font-family: var(--font-editorial), Georgia, serif;
+  font-size: clamp(52px, 7vw, 88px);
+  font-weight: 500;
+}
+.legal-page h2 { margin-top: 48px; }
+.legal-page p,
+.legal-page li { color: rgba(7, 26, 43, 0.76); line-height: 1.7; }
+
 .practice-section {
   background: white;
   padding: 120px clamp(24px, 7vw, 112px);
@@ -541,6 +645,18 @@ p {
   border-top: 1px solid var(--line);
   margin: 45px 0;
 }
+.contact-options {
+  margin-top: 42px;
+  border-top: 1px solid var(--line);
+}
+.contact-options a {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  font-weight: 650;
+}
+.contact-options a:hover { padding-left: 10px; }
 
 .footer {
   background: var(--ink);
@@ -623,9 +739,13 @@ p {
   .capabilities,
   .outcomes,
   .prose-section,
-  .principles {
+  .principles,
+  .decision-questions {
     grid-template-columns: 1fr;
   }
+  .three-card-grid,
+  .four-card-grid,
+  .publication-grid { grid-template-columns: 1fr; }
   .section-label {
     margin-bottom: 30px;
   }
@@ -658,6 +778,9 @@ p {
   .insight-grid {
     grid-template-columns: 1fr;
   }
+  .service-families,
+  .engagement-routes,
+  .insight-publications { padding-top: 80px; padding-bottom: 80px; }
   .contact-page {
     grid-template-columns: 1fr;
     gap: 60px;
